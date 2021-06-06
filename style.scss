@@ -1,28 +1,30 @@
-$color-background : #fff6ce;
-$color__blue:#354fe7;
+$color__background : #92530b;
+$color__yellow:#fffb10;
 
 @mixin cartePostale {
-    border: 5px solid $color-background;
-    box-shadow: 3px 2px 3px #727272;
+    border: 5px solid $color__background;
+    box-shadow: 4px 5px 3px #4e4e4e;
 }
-
-
 
 .container{
     max-width:100%!important;
+    background-color:rgb(248, 250, 228);
+
 }
 
 .blog-header {
-    line-height: 1;
-    border-bottom: 1px solid #e5e5e5;
-    background-color: $color-background;
+
+    background-color: $color__background;
+    text-shadow: 4px 4px 3px #000;
     &-logo {
         font-family: "Playfair Display", Georgia, "Times New Roman", serif/*rtl:Amiri, Georgia, "Times New Roman", serif*/;
-        font-size: 2.25rem;
-        color: $color__blue;
+        font-size: 2.7rem;
+        color: $color__yellow;
         text-decoration: none;
+        padding:0.5rem;
         &:hover{
-            color:#494a50;
+            color:#000;
+            text-shadow:4px 4px 3px $color__yellow;
         }
     }
 }
@@ -44,23 +46,27 @@ font-size: 2.5rem;
 .nav-scroller {
     position: relative;
     z-index: 2;
-    height: 2.75rem;
+    height: 4rem;
     overflow-y: hidden;
 }
   
 .nav-scroller .nav {
     display: flex;
     flex-wrap: wrap;
-    padding-bottom: 1rem;
-    margin-top: -1px;
     overflow-x: auto;
     text-align: center;
     white-space: nowrap;
     -webkit-overflow-scrolling: touch;
     & a{
-        color:$color__blue!important;
+        padding-bottom:1rem;
+        font-size: 1.8rem;
         text-decoration: none;
         font-weight: 700;
+        color: #565e64;
+        text-shadow: 1px 1px 1px #000;
+        &:hover{
+            color: $color__yellow;
+        }
     }
 }
   
@@ -71,56 +77,60 @@ font-size: 2.5rem;
 }
 
 .manege{
-    width:100%; 
-    max-height: 28rem!important; 
-    object-fit: cover;
+    width: 100%;
+    max-height: 30rem!important; 
+    object-fit: contain;
+    margin-bottom:3rem;
+    --bs-gutter-x: 0rem!important;
 }
 
+.phone,
+.place{
+    text-align: center;
+    font-size:1.8rem;
+    text-decoration: none;
+    font-weight: 700;
+    color: $color__background;
+    margin-bottom: 0;
+    margin-top:-1rem;
+    text-shadow: 2px 2px 2px #000;
+    &:hover{
+        color: $color__yellow;
+    }
+}
 .manege,
 .imgIndex{
     @include cartePostale;
+    object-fit: cover;
 }
 
-  .card-img-right {
-    height: 100%;
-    border-radius: 0 3px 3px 0;
-  }
-  
-  .flex-auto {
-    flex: 0 0 auto;
-  }
-  
-  .h-250 { height: 250px; }
-  @media (min-width: 768px) {
-    .h-md-250 { height: 250px; }
-  }
-  
-  /* Pagination */
-  .blog-pagination {
-    margin-bottom: 4rem;
-  }
-  .blog-pagination > .btn {
-    border-radius: 2rem;
-  }
-  
-  /*
-   * Blog posts
-   */
-  .blog-post {
-    margin-bottom: 4rem;
-  }
-  .blog-post-title {
-    margin-bottom: .25rem;
-    font-size: 2.5rem;
-  }
-  .blog-post-meta {
-    margin-bottom: 1.25rem;
-    color: #727272;
-  }
-  
+.presentation{
+    font-size:1.3rem;
+    padding:2rem;
+    &::first-letter{
+        margin-left:2rem;
+    }
+}
+.imgIndex{
+    height: 25rem;
+    object-fit: contain;
+    margin:2rem auto;
+    width:auto;
+}
+
+.place{
+    max-width: 85%;
+    margin: 3rem auto;
+}
+.precision{
+    max-width: 85%;
+    margin: 3rem auto;
+    font-size:1.3rem;
+    text-align: justify;
+}
 
 .footer{
-    background-color: $color-background;
+    background-color: $color__background;
     padding-bottom: 1rem;
     & .copyright{
         width:100%;
@@ -141,7 +151,7 @@ font-size: 2.5rem;
             
         }
         & a{
-            color: $color__blue;
+            color: $color__yellow;
             text-shadow: 1px 1px 2px #000;
             text-decoration: none;
             &:hover{
@@ -151,16 +161,66 @@ font-size: 2.5rem;
     }
 } 
 
-.bd-placeholder-img {
-    font-size: 1.125rem;
-    text-anchor: middle;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    user-select: none;
-}
 
 @media (min-width: 768px) {
     .bd-placeholder-img-lg {
     font-size: 3.5rem;
+    }
+}
+
+@media all and (max-width: 1200px){
+    .imgIndex{
+        max-height: 19rem;
+    }
+    .presentation{
+        padding-top:2rem !important;
+        padding-left:1.3rem;
+        padding-right: 1rem;
+        text-align: justify;
+    }
+    .precision{
+        max-width: 90%;
+    }
+}
+
+@media all and (max-width: 925px){
+    .presentation{
+        order:3;
+        width:auto;
+        padding: 0 3rem;
+        text-align: justify;
+    }
+    .row{
+        column-gap: 4rem;
+        justify-content: center!important;
+        --bs-gutter-x: 0rem!important;
+        & .imgIndex{
+            max-height: 22rem!important;
+            width:20rem!important;
+            object-fit: cover;
+        }
+    }
+    .nav-scroller{
+        height: auto;
+    } .nav {
+        flex-wrap: wrap;
+        & a{
+            font-size:1rem;
+            padding-right: 3rem!important;
+            &:nth-child(1){
+                margin-left:2rem;
+            }
+        }
+    }
+   
+}
+
+@media all and (max-width: 500px){
+    .container,
+    .presentation,
+    .precision{
+        padding-left:0;
+        padding-right: 0;
+
     }
 }
