@@ -95,6 +95,31 @@ section{
     }
 }
 
+//page law.html
+.mentions{
+    & h1{
+        color:rgb(83, 81, 81);
+        text-shadow: 1px 1px 2px #000; 
+    }
+    & .font{
+        color: rgb(83, 81, 81);
+    }
+}
+
+.return_home{
+    & .link_home{
+        text-decoration: none;
+        color: $color__main!important;
+        &:hover{
+            color: #000!important;
+        }
+        .arrow{
+            width:50px;
+        }
+    }
+}
+
+
 @media all and (min-width: 992px){
     h1{
         @include title;
