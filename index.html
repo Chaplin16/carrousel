@@ -2,118 +2,162 @@
 <!doctype html>
     <html lang="en">
     <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="">
-        <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
-        <meta name="generator" content="Hugo 0.83.1">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content=" Aurore Creation Web">
+        <meta name="description" content="Ce magnifique carrousel de chevaux en bois, face aux remparts d'Aigues-Mortes, fait le bonheur de tous les enfants. En journée ou en soirée, un tour de manège suivi d'une partie de pêche aux canards, une barbe-à-papa lumineuse, une crêpe ou une gaufre chaude et croustillante, ou quelques une des superbes sucreries divertiront votre enfant et lui donneront des étoiles pleins les yeux!">
+      
+        <meta property="og:site_name" content="Carrousel d'Aigues-Mortes"/>
+        <meta property="og:type" content="site web"/>
+        <meta property="og:url" content="https://github.com/Chaplin16/portfolio">
+        <meta property="og:title" content="Carrousel d'Aigues-Mortes">
+        <meta property="og:description" content="Ce magnifique carrousel de chevaux en bois, face aux remparts d'Aigues-Mortes, fait le bonheur de tous les enfants. En journée ou en soirée, un tour de manège suivi d'une partie de pêche aux canards, une barbe-à-papa lumineuse, une crêpe ou une gaufre chaude et croustillante, ou quelques une des superbes sucreries divertiront votre enfant et lui donneront des étoiles pleins les yeux!">
+
         <title>Caroussel</title>
 
-        <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/blog/">     
-
-        <!-- Bootstrap core CSS -->
+        <!-- Bootstrap  CSS -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">   
 
         <!-- Favicons -->
-    <link rel="apple-touch-icon" href="/docs/5.0/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
-    <link rel="icon" href="/docs/5.0/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
-    <link rel="icon" href="/docs/5.0/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
-    <link rel="manifest" href="/docs/5.0/assets/img/favicons/manifest.json">
-    <link rel="mask-icon" href="/docs/5.0/assets/img/favicons/safari-pinned-tab.svg" color="#7952b3">
-    <link rel="icon" href="/docs/5.0/assets/img/favicons/favicon.ico">
-    <meta name="theme-color" content="#7952b3">
+        <link rel="icon" href="/docs/5.0/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
 
-        
-        <!-- Custom styles for this template -->
-        <link href="https://fonts.googleapis.com/css?family=Playfair&#43;Display:700,900&amp;display=swap" rel="stylesheet">
         <!-- Custom styles for this template -->
         <link href="style.css" rel="stylesheet">
     </head>
     <body>
-        
-        <div class="container">
-            <header class="blog-header py-3">
-                <div class="row  align-items-center">
-                    <div class="col-12 text-center">
-                        <a class="blog-header-logo" href="index.html">Le Carrousel d'Aigues-Mortes</a>
-                    </div>    
+        <header>
+            <nav class="navbar position-fixed navbar-expand-lg navbar-light w-100 ">
+                <div class="container-fluid justify-content-start">
+
+                    <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav mt-2">
+                            <li class="nav-item">
+                            <a class="nav-link fw-bolder blockquote text-dark" aria-current="page" href="index.html#carousel">Manège</a>
+                            </li>
+                            <li class="nav-item">
+                            <a class="nav-link fw-bolder blockquote text-dark" href="index.html#fishing">Pêche à la ligne</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link fw-bolder blockquote text-dark" href="index.html#candy">Gourmandises</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link fw-bolder blockquote text-dark" href="index.html#waffles">Gaufres/Crêpes</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <h1 class="fw-bolder">Carrousel d'Aigues Mortes</h1>
                 </div>
-            </header>
-
-        <div class="nav-scroller mt-2 py-1 mb-1">
-            <nav class="nav d-flex justify-content-around">
-                <a class="p-2 link-secondary" href="#">Manège</a>
-                <a class="p-2 link-secondary" href="#">Pêche à la ligne</a>
-                <a class="p-2 link-secondary" href="#">Crèpes</a>
-                <a class="p-2 link-secondary" href="#">Gaufres</a>
-
             </nav>
-        </div>
+        </header>
 
-        </div>
-
-        <main class="container">
-        <div class="p-4 pt-0 p-md-5 pt-md-2 rounded">
-
-            <div class="col-md-12 ">
-                <img class="manege" src="images/carousel.jpg" >
-            </div>
-            <p class="phone"> 
-                <i class="fa fa-phone" aria-hidden="true"></i>
-                01.01.01.01.01
+        <main>
+            <p class="text-center">
+                <img class="rounded img-fluid img_carousel" src="images/carousel_inside.png" alt="image du manège : le carrousel d'aigues-mortes">
             </p>
 
-
-        <div class="row mb-2 block flex-wrap ">
-            <div class="col-md-4 ">
-                <div class="row g-0 rounded  flex-md-row">
-                    <img class="imgIndex" src="images/sweety.png">
+            <div class="scrolling_menu rounded mt-3 mb-3 text-nowrap overflow-hidden">
+                <div class="d-inline-block">
+                    <span class="scrolling_title fw-bolder">CARROUSEL</span>
+                    <span class="ms-2 me-2 "> &#x25CF;  </span> 
+                    Ouvert tous les jours en été de 10h à 01h 
+                    <span class="ms-2 me-2"> &#x25CF; </span> 
+                    <span class="scrolling_title fw-bolder">CARROUSEL</span>
+                    <span class="ms-2 me-2"> &#x25CF;  </span> 
+                    Ouvert tous les jours en été de 10h à 01h 
+                    <span class="ms-2 me-2"> &#x25CF; </span> 
+                    <span class="scrolling_title fw-bolder">CARROUSEL</span>
+                    <span class="ms-2 me-2"> &#x25CF;  </span> 
+                    Ouvert tous les jours de 10h à 01h 
+                    <span class="ms-2 me-2"> &#x25CF; </span> 
                 </div>
             </div>
 
-            <div class="col-md-4 presentation">
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae quo reprehenderit maiores id magnam culpa. Provident earum ullam placeat, nesciunt sapiente illum ipsum facilis adipisci eius minima quo nulla aperiam!Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                </p>
+            <div class="d-flex justify-content-center mt-5 flex-wrap m-auto mb-3" style="width: 45vh;">
+                <a class="card overflow-hidden" style="max-width: 12rem; max-height: 200px;" href="index.html#carousel">
+                    <img src="images/girl_on_horse.jpeg" alt="petite fille faisant du manège sur le carrousel d'Aigues-Mortes">
+                </a>
+                <a class="card " style="max-width: 12rem; max-height: 200px;" href="index.html#fishing">
+                    <img src="images/fishing_enormous.jpeg" alt="pêche aux canards pour les enfants sur le stand du manège d'Aigues-Mortes">
+                </a>
+                <a class="card overflow-hidden" style="max-width: 12rem; max-height: 195px;" href="index.html#candy">
+                    <img src="images/sweets.jpeg"alt="bonbons, sucre d'orge, sucettes en vente sur le stand du manège d'Aigues-Mortes">
+                </a>
+                <a class="card overflow-hidden" style="max-width: 12rem; max-height: 200px;" href="index.html#waffles">
+                    <img src="images/waffles.jpeg" alt="Gaufres avec chantilly en vente sur le stand du manège d'Aigues-Mortes">
+                </a>
             </div>
 
-            <div class="col-md-4">
-                <div class="row g-0  flex-md-row">
-                    <img class="imgIndex" src="images/ducks.png">
+            <section class=" m-auto">
+                <h2 class="text-left pt-5 mb-4 fw-bolder" id="carousel">La manège d'Aigues-Mortes</h2>
+                <p class="lead">Ce magnifique manège de chevaux de bois, avec son emplacement emblématique devant les remparts, ravi au quotidien des centaines d'enfants. Que ce soit les sujets placés au sol ou au premier étage avec une vue imprenable sur la Tour de Constance, les enfants se régalent toujours autant et leurs grands yeux s'illuminent de joie. Seul endroit d'Aigues-Mortes où les rires des enfants retentissent jusqu'à tard dans la soirée. </p>
+                <div class="product_shop d-flex flex-wrap justify-content-around" >
+                    <img class="card mb-3" style="width:200px; height: 230px;" src="images/carousel_great.jpeg">
+                    <img class="card mb-3" style="width:200px; height: 230px;" src="images/carrousel.png">
+                    <img class="card mb-3" style="width:200px; height: 230px;" src="images/carousel_home.jpeg">
+                    <img class="card mb-3" style="width:200px; height: 230px;" src="images/carousel_whole.jpeg">
+                    <img class="card mb-3" style="width:200px; height: 230px;" src="images/carousel_top.jpeg">
+                    <img class="card mb-3" style="width:200px; height: 230px;" src="images/carousel_night.jpeg">
+                    <img class="card mb-3" style="width:200px; height: 230px;" src="images/carousel_night_2.jpeg">
+                    <img class="card mb-3" style="width:200px; height: 230px;" src="images/carousel_night_3.jpeg">
+                    <img class="card mb-3" style="width:200px; height: 230px;" src="images/carousel_in_winter.jpeg">
+                    <img class="card mb-3" style="width:200px; height: 230px;" src="images/carousel_in_winter_2.jpeg">
+                    <img class="card mb-3" style="width:200px; height: 230px;" src="images/carousel_in_winter_3.jpeg">
+
+                </div>   
+                
+                
+                <h2 class="text-left pt-5 mb-4 fw-bolder" id="fishing">La pêche aux canards</h2>
+                <p class="lead">Qui attrapera le plus de ces jolis canards aux couleurs chatoyantes? Cette activité ludique passionne tous les enfants qui ne veulent plus s'arrêter de pêcher. Il n'y a pas de perdant: lot au choix à la fin de chaque partie! La pêche aux canards reste un vrai moment de plaisir pour les petits.</p>
+                <div class="product_shop d-flex flex-wrap justify-content-around" >
+                    <img class="card mb-3" style="width:200px; height: 230px;" src="images/girl_fishing.jpeg">
+                    <img class="card mb-3" style="width:200px; height: 230px;" src="images/fishing_in_winter.jpeg">
+                    <img class="card mb-3" style="width:200px; height: 230px;" src="images/fishing_2.jpeg">
+                    <img class="card mb-3" style="width:200px; height: 230px;" src="images/girl_fishing_2.jpeg">
+                    <img class="card mb-3" style="width:200px; height: 230px;" src="images/fishing_3.jpeg">
+                    <img class="card mb-3" style="width:200px; height: 230px;" src="images/fishing.png">
                 </div>
-            </div>
-        </div>
-        <div class="precision">
-            ipsum facilis adipisci eius minima quo nulla aperiam!Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae quo
-            nesciunt sapiente illum ipsum facilis adipisci eius minima quo nulla aperiam!Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae quo reprehenderit maiores id magnam culpa. Provident earum ullam placeat, nesciunt sapiente illum ipsum facilis adipisci eius minima quo nulla aperiam!Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae quo !Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae quo reprehenderit maiores id magnam culpa. Provident earum ullam placeat, nesciunt sapiente illum Beatae quo reprehenderit maiores id magnam culpa. Provident earum ullam placeat, nesciunt sapiente illum ipsum facilis adipisci eius minima quo nulla aperiam 
-        </div>
-        <div class="place">
-            <p> Notre magnifique Carrousel Gourmand vous accueille tous les jours devant la Tour de Constance de 10h à 19h pour le plaisir des petits et des grands!</p>
-        </div>
-        <div class="map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d92506.46479856639!2d4.1917727!3d43.5684873!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xdefa780cfd6521e4!2sCarrousel%20Gourmand!5e0!3m2!1sfr!2sfr!4v1623007462596!5m2!1sfr!2sfr" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-        </div>
 
+                <h2 class="text-left pt-5 mb-4 fw-bolder"id="candy">Gourmandises</h2>
+                <p class="lead">Dans cet univers de fête foraine, les barbes-à-papa lumineuses font leur entrée parmi les sucres d'orge, sucettes, chamallows, bonbons et d'autres délicieuses sucreries. Ces nouvelles barbes-à-papa, magnifiques, originales et lumineuses, aux multiples parfums, sont toujours aussi délicieuses. Venez les découvrir en journée ou en soirée. </p>
+                <div class="product_shop d-flex flex-wrap justify-content-around" >
+                    <img class="card mb-3" style="width:200px; height: 230px;" src="images/sweety.jpeg">
+                    <img class="card mb-3" style="width:200px; height: 230px;" src="images/cotton_candy.jpeg">
+                    <img class="card mb-3" style="width:200px; height: 230px;" src="images/light-cotton-candy-2.png">
+                    <img class="card mb-3" style="width:200px; height: 230px;" src="images/light-cotton-candy.png">
+                    <img class="card mb-3" style="width:200px; height: 230px;" src="images/sweets.jpeg">
+                    <img class="card mb-3" style="width:200px; height: 230px;" src="images/sweets_2.jpeg">
+                </div>
+
+                <h2 class="text-left pt-5 mb-4 fw-bolder"id="waffles">Gaufres et crêpes</h2>
+                <p class="lead">Une petite faim? ou juste pour le plaisir? De délicieuses gaufres et d'excellentes crêpes sont proposées à toute heure de la journée et de la soirée. Très appréciée, une crêpe  ou une gaufre toute chaude s'avère parfaite pour  ce moment de détente passé au Carrousel d'Aigues-Mortes.</p>
+                <div class="product_shop d-flex flex-wrap justify-content-around" >
+                    <img class="card mb-3" style="width:200px; height: 230px;" src="images/waffles.jpeg">
+                    <img class="card mb-3" style="width:200px; height: 230px;" src="images/pancake.jpg">
+                </div>
+            </section>
         </main>
+         
         <footer>
-            <div class="footer">
-                <p class="copyright">
-                    <img src="images/copyright_25.png" alt="copyright">
-                    2021 Caroussel. Tous droits réservés
-                </p>
-                <div class="director">
-                    <img src="images/mermaidSmall.png" class="mermaid" alt="logo de la sirene d'aurore Creation Web"/>
-                    <a href="https://aurorecreationweb.fr">Aurore Creation Web </a>
+            <div class="footer d-flex justify-content-center">
+                <img class="relance pt-3 me-3" src="images/etiquette-FR-kit-com.png"alt="site financé par le plan relance du gouvernement">
+                <div>
+                    <p class="copyright pt-3">
+                        © 2021 LCM ANIMATIONS LOISIRS. Tous droits réservés
+                        <div class="director fw-bolder pb-3 flex-column align-items-center">
+                            <img class="w-25 h-auto" src="images/mermaidSmall.png" alt="logo de la sirene d'aurore Creation Web"/>
+                            <a class="text-dark fw-normal text-decoration-none" href="https://aurorecreationweb.fr">Aurore Creation Web </a><br>
+                            <a href="law.html" class="law text-dark fw-normal text-decoration-none">Mentions légales</a>
+                        </div>
+                    </p>
                 </div>
             </div>
-    </footer>
-    <script src="https://kit.fontawesome.com/9a0b48300d.js" crossorigin="anonymous"></script>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
-      crossorigin="anonymous"></script>
-  
-  
-  </body>
-  
-  </html>
+        </footer>
+           <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+        </body>
+        </html>
   
