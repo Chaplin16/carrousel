@@ -137,6 +137,12 @@ section h2 {
   width: 50px;
 }
 
+@media all and (min-width: 992px) and (max-width: 1100px) {
+  #link1 {
+    display: none;
+  }
+}
+
 @media all and (min-width: 992px) {
   .img_carousel {
     margin-top: 5.5rem !important;
