@@ -4,7 +4,6 @@ let link3 = document.getElementById("link3");
 let link4 = document.getElementById("link4");
 
 
-
 window.onscroll = function () {
     if(document.documentElement.scrollTop > 500){
         document.getElementById("navbar").style.background = "rgb(65, 65, 65)";
@@ -52,3 +51,36 @@ window.onscroll = function () {
     }
 }
 
+document.getElementById("card1").addEventListener("mouseout", function() {
+    document.getElementById("link_card1").style.display = "none";
+});
+
+document.getElementById("card2").addEventListener("mouseout", function() {
+    document.getElementById("link_card2").style.display = "none";
+});
+
+document.getElementById("card3").addEventListener("mouseout", function() {
+    document.getElementById("link_card3").style.display = "none";
+});
+
+document.getElementById("card4").addEventListener("mouseout", function() {
+    document.getElementById("link_card4").style.display = "none";
+    document.getElementById("card4").style.filter ="brightness(100%)";
+});
+
+document.getElementById("card1").addEventListener("mouseover", function() {
+    document.getElementById("link_card1").style.display = "block";
+});
+
+document.getElementById("card2").addEventListener("mouseover", function() {
+    document.getElementById("link_card2").style.display = "block";
+});
+
+document.getElementById("card3").addEventListener("mouseover", function() {
+    document.getElementById("link_card3").style.display = "block";
+});
+
+document.getElementById("card4").addEventListener("mouseover", function() {
+    document.getElementById("link_card4").style.display = "block";
+    document.getElementById("card4").style.filter ="brightness(50%)";
+});
