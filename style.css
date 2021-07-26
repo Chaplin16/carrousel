@@ -170,9 +170,12 @@ section h2 {
   .law {
     margin-left: 3.7rem !important;
   }
+  .cards {
+    width: 300px !important;
+  }
   .card {
-    max-width: 10rem !important;
-    max-height: 150px !important;
+    max-width: 9rem !important;
+    max-height: 130px !important;
   }
   .scrolling_menu {
     margin-top: 2rem !important;
