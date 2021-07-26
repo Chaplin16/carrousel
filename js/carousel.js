@@ -37,12 +37,12 @@ const carousel = [
     {
         id:8,
         attachment: "images/carousel_night_3.jpeg",
-        alt:"Carrousel illuminé avec beaucoup de monde sur la place devant les remparts d'Aigues-Mortes"
+        alt:"Carrousel illuminé avec beaucoup de monde devant les remparts d'Aigues-Mortes"
     },
     {
         id:9,
         attachment: "images/carousel_in_winter.jpeg",
-        alt:"Manège de chevaux lors des périodes de Noël sur la place devant les remparts d'Aigues-Mortes"
+        alt:"Manège de chevaux lors des périodes de Noël devant les remparts d'Aigues-Mortes"
     },
     {
         id:10,
@@ -52,7 +52,7 @@ const carousel = [
     {
         id:11,
         attachment: "images/carousel_in_winter_3.jpeg",
-        alt:"Manège de chevaux illuminé lors des périodes de Noël  sur la place devant les remparts d'Aigues-Mortes"
+        alt:"Manège de chevaux illuminé lors des périodes de Noël devant les remparts d'Aigues-Mortes"
     }
 
 ]

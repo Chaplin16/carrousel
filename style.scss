@@ -148,4 +148,22 @@ section{
     .law{
         margin-left: 3.7rem!important;
     }
+    .card{
+        max-width: 10rem!important;
+        max-height:150px!important;
+    }
+    .scrolling_menu{
+        margin-top: 2rem!important;
+    }
+    
+}
+@media all and (max-width:360px){
+    .card{
+        max-width: 8rem!important;
+        max-height:130px!important;
+    }
+    h1{
+        font-size:1.2rem!important;
+        padding-left:0px;
+    }
 }

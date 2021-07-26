@@ -7,6 +7,6 @@ const  waffles = [
     {
         id:2,
         attachment:"images/pancake.jpg",
-        alt:"Superbe gaufre à la chantilly à acheter au Carrousel d'Aigues-Mortes"
+        alt:"Excellente crêpes au Carrousel d'Aigues-Mortes"
     }
 ]
