@@ -30,7 +30,8 @@ h1{
 .navbar-toggler{
     background-color: $color__main;
 }
-.navbar:hover{
+.navbar:hover,
+.navbar:focus{
     background-color: #fff;
     box-shadow: $shadow;
     z-index:5;
