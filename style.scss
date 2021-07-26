@@ -10,7 +10,7 @@
 }
 
 //variables
-$color__main: #e4ac7e;
+$color__main: rgb(228, 172, 126);
 $shadow: 0 .25em .5em $color__main,inset 0 0 1em .20em $color__main;
 
 @mixin title{
@@ -18,31 +18,29 @@ $shadow: 0 .25em .5em $color__main,inset 0 0 1em .20em $color__main;
     text-shadow: 2px 2px 3px #000;
 }
 
+*{
+    box-sizing: border-box;
+}
+
 h1{
-    text-shadow: 4px 5px 3px #000;
-    color: #fff;
+    text-shadow: 2px 2px 3px #000;
     padding-left: 15px;
 }
 .navbar{
     line-height: 1rem;
     z-index: 5;
+    &:focus,
+    &:hover{
+        box-shadow: $shadow;
+    }
+    &:hover{
+        background-color: #fff;
+    }
 }
 .navbar-toggler{
     background-color: $color__main;
 }
-.navbar:hover,
-.navbar:focus{
-    background-color: #fff;
-    box-shadow: $shadow;
-    z-index:5;
-    & h1{
-        color: rgb(73, 73, 73);
-        text-shadow: 0 0 0 ;
-    }
-    .navbar-nav .nav-link:hover{
-            color: $color__main!important;
-    }
-}
+
 //menu defilant
 .scrolling_menu{
     max-width: 80%;
@@ -99,7 +97,6 @@ section{
 //page law.html
 .mentions{
     & h1{
-        color:rgb(83, 81, 81);
         text-shadow: 1px 1px 2px #000; 
     }
     & .font{
@@ -122,19 +119,12 @@ section{
 
 
 @media all and (min-width: 992px){
-    h1{
-        @include title;
-    }
     .img_carousel{
         margin-top:5.5rem!important;
     }
     .navbar{
-        background-color: #fff;
         box-shadow: $shadow;
         z-index:5;
-        &:hover h1{
-            text-shadow: 2px 2px 3px #000!important;
-        }
     }
     .scrolling_menu{
         max-width: 40%;
