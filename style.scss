@@ -11,7 +11,7 @@
 
 //variables
 $color__main: rgb(228, 172, 126);
-$shadow: 0 .25em .5em $color__main,inset 0 0 1em .20em $color__main;
+$shadow: 0 .1em .3em $color__main,inset 0 0 0.5em .20em $color__main;
 
 @mixin title{
     color: $color__main!important;
@@ -50,7 +50,7 @@ h1{
     box-shadow: 0 .25em .5em #CCC,inset 0 0 1em .25em #CCC;
     &> :first-child {
         padding-left: 100%;
-        animation: scrolling 24s infinite linear;
+        animation: scrolling 30s infinite linear;
     }
     .scrolling_title{
         color: rgb(70, 62, 59);
