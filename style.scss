@@ -74,7 +74,6 @@ section{
 //bas de page//
 .footer{
     background-color: $color__main;
-    flex-direction: row;
     & .relance{
         width: 10rem;
         max-height: 6rem;
@@ -92,6 +91,15 @@ section{
             text-shadow: 0 0 0 #000;
         }
     }
+    .director .facebook{
+        padding-top: 2rem!important;
+        &:hover{
+            color:rgb(70, 62, 59)!important;
+            text-shadow: 0 0 0 #000;
+        }
+    }
+  
+
 }
 
 //page law.html
@@ -158,6 +166,10 @@ section{
     .scrolling_menu{
         margin-top: 2rem!important;
     }
+    .footer{
+        flex-direction: column;
+        align-items: center;
+    }    
 }
 @media all and (max-width:360px){
 
