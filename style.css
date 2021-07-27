@@ -1,16 +1,32 @@
 @charset "UTF-8";
-@keyframes scrolling {
+@-webkit-keyframes scrolling {
   0% {
-    transform: translate3d(0, 0, 0);
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
     /* position initiale à droite */
   }
   100% {
-    transform: translate3d(-100%, 0, 0);
+    -webkit-transform: translate3d(-100%, 0, 0);
+            transform: translate3d(-100%, 0, 0);
     /* position finale à gauche */
   }
 }
+@keyframes scrolling {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+    /* position initiale à droite */
+  }
+  100% {
+    -webkit-transform: translate3d(-100%, 0, 0);
+            transform: translate3d(-100%, 0, 0);
+    /* position finale à gauche */
+  }
+}
+
 * {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 h1 {
@@ -22,9 +38,12 @@ h1 {
   line-height: 1rem;
   z-index: 5;
 }
+
 .navbar:focus, .navbar:hover {
-  box-shadow: 0 0.1em 0.3em #e4ac7e, inset 0 0 0.5em 0.2em #e4ac7e;
+  -webkit-box-shadow: 0 0.1em 0.3em #e4ac7e, inset 0 0 0.5em 0.2em #e4ac7e;
+          box-shadow: 0 0.1em 0.3em #e4ac7e, inset 0 0 0.5em 0.2em #e4ac7e;
 }
+
 .navbar:hover {
   background-color: #fff;
 }
@@ -38,12 +57,16 @@ h1 {
   margin: 1.5em auto 2em;
   border: 2px solid #e4ac7e;
   font-size: 1.3rem;
-  box-shadow: 0 0.25em 0.5em #CCC, inset 0 0 1em 0.25em #CCC;
+  -webkit-box-shadow: 0 .25em .5em #CCC,inset 0 0 1em .25em #CCC;
+          box-shadow: 0 .25em .5em #CCC,inset 0 0 1em .25em #CCC;
 }
+
 .scrolling_menu > :first-child {
   padding-left: 100%;
-  animation: scrolling 30s infinite linear;
+  -webkit-animation: scrolling 30s infinite linear;
+          animation: scrolling 30s infinite linear;
 }
+
 .scrolling_menu .scrolling_title {
   color: #463e3b;
 }
@@ -53,12 +76,14 @@ h1 {
 }
 
 .card {
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 section {
   max-width: 75%;
 }
+
 section h2 {
   color: #e4ac7e !important;
   text-shadow: 2px 2px 3px #000;
@@ -67,20 +92,32 @@ section h2 {
 .footer {
   background-color: #e4ac7e;
 }
+
+.footer p {
+  margin-bottom: 0 !important;
+}
+
 .footer .relance {
   width: 10rem;
   max-height: 6rem;
 }
+
+.footer .director a {
+  color: #463e3b !important;
+}
+
 .footer .director a:hover {
   color: #fff !important;
 }
+
 .footer .director .law {
-  margin-left: 6.5rem;
   font-size: 0.9rem !important;
 }
+
 .footer .director .law:hover {
   color: #fff !important;
 }
+
 .footer .director .facebook {
   color: #463e3b !important;
 }
@@ -88,6 +125,7 @@ section h2 {
 .mentions h1 {
   text-shadow: 1px 1px 2px #000;
 }
+
 .mentions .font {
   color: #535151;
 }
@@ -96,9 +134,11 @@ section h2 {
   text-decoration: none;
   color: #e4ac7e !important;
 }
+
 .return_home .link_home:hover {
   color: #000 !important;
 }
+
 .return_home .link_home .arrow {
   width: 50px;
 }
@@ -108,65 +148,63 @@ section h2 {
     display: none;
   }
 }
+
 @media all and (min-width: 992px) {
   .img_carousel {
     margin-top: 5.5rem !important;
   }
-
   .navbar {
-    box-shadow: 0 0.1em 0.3em #e4ac7e, inset 0 0 0.5em 0.2em #e4ac7e;
+    -webkit-box-shadow: 0 0.1em 0.3em #e4ac7e, inset 0 0 0.5em 0.2em #e4ac7e;
+            box-shadow: 0 0.1em 0.3em #e4ac7e, inset 0 0 0.5em 0.2em #e4ac7e;
     z-index: 5;
   }
-
   .scrolling_menu {
     max-width: 40%;
   }
 }
+
 @media all and (max-width: 550px) {
   .navbar h1 {
     font-size: 1.4rem;
   }
-
   .product_shop .card {
     width: 140px !important;
   }
-
   section {
     max-width: 90% !important;
   }
-
   .law {
     margin-left: 3.7rem !important;
   }
-
   .cards {
     width: 300px !important;
   }
-
   .card {
     max-width: 9rem !important;
     max-height: 130px !important;
   }
-
   .scrolling_menu {
     margin-top: 2rem !important;
   }
-
   .footer {
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
+
 @media all and (max-width: 360px) {
   .card {
     max-width: 8rem !important;
     max-height: 130px !important;
   }
-
   h1 {
     font-size: 1.2rem !important;
     padding-left: 0px;
   }
 }
-
 /*# sourceMappingURL=style.css.map */

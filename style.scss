@@ -73,6 +73,9 @@ section{
 
 //bas de page//
 .footer{
+    p{
+        margin-bottom:0!important;
+    }
     background-color: $color__main;
     & .relance{
         width: 10rem;
@@ -80,12 +83,12 @@ section{
     }
     & .director{
         & a{
+            color:rgb(70, 62, 59)!important;
             &:hover{
                 color: #fff!important;
             }
         }
         & .law{
-            margin-left: 6.5rem;
             font-size: 0.9rem!important;
             &:hover{
                 color: #fff!important;
