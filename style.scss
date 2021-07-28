@@ -15,7 +15,7 @@ $shadow: 0 .1em .3em $color__main,inset 0 0 0.5em .20em $color__main;
 
 @mixin title{
     color: $color__main!important;
-    text-shadow: 2px 2px 3px #000;
+    text-shadow: 1px 1px 2px #000;
 }
 
 *{
@@ -23,7 +23,7 @@ $shadow: 0 .1em .3em $color__main,inset 0 0 0.5em .20em $color__main;
 }
 
 h1{
-    text-shadow: 2px 2px 3px #000;
+    text-shadow: 1px 1px 2px #000;
     padding-left: 15px;
 }
 .navbar{
