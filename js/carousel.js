@@ -1,4 +1,4 @@
-const carousel = [
+const carousel_photo = [
     {
         id:1,
         attachment: "images/carousel_great.jpeg",

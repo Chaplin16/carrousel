@@ -55,19 +55,35 @@ h1{
         color: rgb(70, 62, 59);
     }
 }
-
+.img_carousel{
+    object-fit: cover;
+}
 .card-title{
     font-size:1.2rem;
 }
 
-.card{
-    object-fit: cover;
-}
+
 section{
     max-width:75%;
     h2{
         @include title;
     }
+    & .card{
+        border: 0px solid transparent!important;
+    }
+    
+    & .card-img{
+        margin-left: 0!important;
+        height: 300px;
+        & img{
+            object-fit: cover;
+            height: 100%;
+            width: 300px!important;
+          }
+      }
+}
+.slick-prev:before, .slick-next:before{
+    color: #000;
 }
 
 //bas de page//

@@ -14,16 +14,20 @@
         <meta property="og:title" content="Carrousel d'Aigues-Mortes">
         <meta property="og:description" content="Ce magnifique carrousel de chevaux en bois, face aux remparts d'Aigues-Mortes, fait le bonheur de tous les enfants. En journée ou en soirée, un tour de manège suivi d'une partie de pêche aux canards, une barbe-à-papa lumineuse, une crêpe ou une gaufre chaude et croustillante, ou quelques-unes des superbes sucreries divertiront votre enfant et lui donneront des étoiles pleins les yeux!">
 
-        <!-- Bootstrap  CSS -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">   
-        
-        <!-- Favicons -->
-        <link rel="icon" href="/docs/5.0/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
-        
-        <!-- Custom styles for this template -->
-        <link href="style.css" rel="stylesheet">
-
+        <meta name="robots" content="all" />
+        <!-- Bootstrap  CSS --> 
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+        crossorigin="anonymous">
+        <!-- favicon -->
+        <link rel="icon" type="image/png" sizes="16x16"
+        href="images/favicon.png">
+         <!-- jquery et slick.js -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <link rel="stylesheet" type="text/css" href="./js/slick/slick.css"/>
+        <link rel="stylesheet" type="text/css" href="./js/slick/slick-theme.css"/>
+        <script type="text/javascript" src="./js/slick/slick.js"></script>
+        <link rel="stylesheet" href="style.css" />
         <title>Caroussel Accueil</title>
 
     </head>
@@ -58,9 +62,9 @@
 
         <main>
             <p class="text-center">
-                <img class="rounded img-fluid img_carousel" style="max-width:100%;" src="images/carousel_inside.png" alt="image du manège : le carrousel d'aigues-mortes">
+                <img class="rounded img-fluid img_carousel" style="max-width:100%;height:30rem;" src="images/manege_name.jpg" alt="image du manège : le carrousel d'aigues-mortes">
             </p>
-
+            <!-- titre déroulant -->
             <div class="scrolling_menu rounded mt-5 text-nowrap overflow-hidden">
                 <div class="d-inline-block">
                     <span class="scrolling_title fw-bolder">CARROUSEL</span>
@@ -77,7 +81,13 @@
                     <span class="ms-2 me-2"> &#x25CF; </span> 
                 </div>
             </div>
-
+            <!-- video  -->
+            <div class="text-center">
+                <video width="450" height="300" controls>
+                    <source src="images/manege_jour2.mp4" type=video/mp4>
+                </video>
+            </div>
+            <!-- manu avec les 4 images  -->
             <div class=" cards d-flex justify-content-center mt-4 flex-wrap m-auto mb-3" style="width: 500px; height: auto;">
                 <a class="card" style="max-width: 12rem; max-height: 200px;" href="index.html#carousel" id="card1">
                     <img src="images/girl_on_horse.jpeg" alt="petite fille faisant du manège sur le carrousel d'Aigues-Mortes" class="position-relative" id="img_card1" >
@@ -102,27 +112,52 @@
                 <p class="lead">
                     Ce magnifique manège de chevaux de bois, avec son emplacement emblématique devant les remparts, ravi au quotidien des centaines d'enfants. Que ce soit les sujets placés au sol ou au premier étage avec une vue imprenable sur la Tour de Constance, les enfants se régalent toujours autant et leurs grands yeux s'illuminent de joie. Seul endroit d'Aigues-Mortes où les rires des enfants retentissent jusqu'à tard dans la soirée. Suivez notre actualité sur <a class="text-decoration-none fw-bold text-secondary  lead" href="https://www.facebook.com/Carrousel-Aigues-Mortes-904851826297458/">Facebook-le Carrousel d'Aigues-Mortes</a> en temps réel!
                 </p>
-                
-                <div class="product_shop d-flex flex-wrap justify-content-around" id="card_carousel">
-                 
-                </div>   
+
+                <div class="container text-center my-3" >
+                    <div class="row mx-auto my-auto justify-content-center">
+                        <div id="recipeCarousel" data-bs-ride="carousel">
+                            <div class="carousel-slick firstCarousel"  role="listbox">
+                                 <!-- insertion via photo_carousel.js et carousel.js-->
+                            </div>
+                        </div >
+                    </div>
+                </div>
                 
                 <h2 class="text-left pt-5 mb-4 fw-bolder" id="fishing">La pêche aux canards</h2>
                 <p class="lead">Qui attrapera le plus de ces jolis canards aux couleurs chatoyantes? Cette activité ludique passionne tous les enfants qui ne veulent plus s'arrêter de pêcher. Il n'y a pas de perdant: lot au choix à la fin de chaque partie! La pêche aux canards reste un vrai moment de plaisir pour les petits. Suivez notre actualité sur <a class="text-decoration-none fw-bold text-secondary " href="https://www.facebook.com/Carrousel-Aigues-Mortes-904851826297458/">Facebook-le Carrousel d'Aigues-Mortes</a> en temps réel!</p>
-                <div class="product_shop d-flex flex-wrap justify-content-around" id="card_fishing">
-                   
+
+                <div class="container text-center my-3" >
+                    <div class="row mx-auto my-auto justify-content-center">
+                        <div id="recipeCarousel" data-bs-ride="carousel">
+                            <div class="carousel-slick secondCarousel"  role="listbox">
+                                 <!-- insertion via photo_carousel.js et fishing.js-->
+                            </div>
+                        </div >
+                    </div>
                 </div>
 
                 <h2 class="text-left pt-5 mb-4 fw-bolder"id="candy">Gourmandises</h2>
                 <p class="lead">Dans cet univers de fête foraine, les barbes-à-papa lumineuses font leur entrée parmi les sucres d'orge, sucettes, chamallows, bonbons et d'autres délicieuses sucreries. Ces nouvelles barbes-à-papa, magnifiques, originales et lumineuses, aux multiples parfums, sont toujours aussi délicieuses. Venez les découvrir en journée ou en soirée. </p>
-                <div class="product_shop d-flex flex-wrap justify-content-around" id="card_sweet">
 
+                <div class="container text-center my-3" >
+                    <div class="row mx-auto my-auto justify-content-center">
+                        <div id="recipeCarousel" data-bs-ride="carousel">
+                            <div class="carousel-slick thirdCarousel"  role="listbox">
+                                 <!-- insertion via photo_carousel.js et sweet-->
+                            </div>
+                        </div >
+                    </div>
                 </div>
-
                 <h2 class="text-left pt-5 mb-4 fw-bolder"id="waffles">Gaufres et crêpes</h2>
                 <p class="lead">Une petite faim? ou juste pour le plaisir? De délicieuses gaufres et d'excellentes crêpes sont proposées à toute heure de la journée et de la soirée. Très appréciée, une crêpe  ou une gaufre toute chaude s'avère parfaite pour  ce moment de détente passé au Carrousel d'Aigues-Mortes. </p>
-                <div class="product_shop d-flex flex-wrap justify-content-around mb-4" id="card_waffles">
-                  
+                <div class="container text-center my-3" >
+                    <div class="row mx-auto my-auto justify-content-center">
+                        <div id="recipeCarousel" data-bs-ride="carousel">
+                            <div class="carousel-slick fourCarousel "  role="listbox">
+                                 <!-- insertion via photo_carousel.js et sweet-->
+                            </div>
+                        </div >
+                    </div>
                 </div>
             </section>
         </main>
@@ -157,11 +192,9 @@
             <script src="js/fishing.js"></script>
             <script src="js/sweet.js"></script>
             <script src="js/waffles.js"></script>
-            <script src="js/photo_waffles.js"></script>
-            <script src="js/photo_carousel.js"></script>
-            <script src="js/photo_fishing.js"></script>
-            <script src="js/photo_sweet.js"></script>
-            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+            <script src="js/index_carousel.js"></script>
+            
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     </body>
 </html>
   
