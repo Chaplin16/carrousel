@@ -9,7 +9,7 @@ function carousel(selector, data) {
     $(element).slick({
         centerMode: true,
         centerPadding: '40px',
-        slidesToShow: 5,
+        slidesToShow: 4,
         arrows: true,
         adaptiveHeight: true,
         responsive: [{

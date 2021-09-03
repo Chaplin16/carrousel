@@ -6,18 +6,18 @@ const carousel_photo = [
     },
     {
         id:2,
-        attachment: "images/carrousel.png",
-        alt:"Carrousel de chevaux sur la place devant les remparts d'Aigues-Mortes"
-    },
-    {
-        id:3,
         attachment: "images/carousel_home.jpeg",
         alt:"Accueil du manège de chevaux avec Isabelle devant les remparts d'Aigues-Mortes"
     },
     {
-        id:4,
+        id:3,
         attachment: "images/carousel_whole.jpeg",
         alt:"Carrousel sur la place devant les remparts d'Aigues-Mortes"
+    },
+    {
+        id:4,
+        attachment: "images/carrousel.jpg",
+        alt:"Carrousel de chevaux sur la place devant les remparts d'Aigues-Mortes"
     },
     {
         id:5,
@@ -26,7 +26,7 @@ const carousel_photo = [
     },
     {
         id:6,
-        attachment: "images/carousel_night.jpeg",
+        attachment: "images/manege_nuit2.jpeg",
         alt:"Carrousel de chevaux, photo prise la nuit, sur la place devant les remparts d'Aigues-Mortes"
     },
     {

@@ -9,12 +9,33 @@
     }
 }
 
+@keyframes position-left{
+    0%{
+        transform: translateX(-200%);
+    }
+    100%{
+        transform: translateX(0)
+    }
+}
+
+@keyframes position-right{
+    0%{
+        transform: translateX(+200%);
+    }
+    100%{
+        transform: translateX(0)
+    }
+}
+
 //variables
-$color__main: rgb(228, 172, 126);
+$color__main: rgb(229, 185, 155);
+$color__brown : #532901;
 $shadow: 0 .1em .3em $color__main,inset 0 0 0.5em .20em $color__main;
 
-@mixin title{
-    color: $color__main!important;
+@mixin effect{
+    &:hover{
+        filter: brightness(70%);
+    }
 }
 
 *{
@@ -22,28 +43,43 @@ $shadow: 0 .1em .3em $color__main,inset 0 0 0.5em .20em $color__main;
 }
 
 h1{
-    text-shadow: 1px 1px 2px #000;
+    color: #532901!important;
     padding-left: 15px;
 }
+
 .navbar{
-    line-height: 1rem;
-    z-index: 5;
-    &:focus,
-    &:hover{
-        box-shadow: $shadow;
+    box-shadow: $shadow;
+    & .navbar-toggler{
+        background-color: $color__main;
+        &:hover{
+            background-color: $color__brown;
+        }
     }
-    &:hover{
-        background-color: #fff;
+    & .nav-link{
+        padding-left:1rem;
+        color: $color__brown!important;
+        line-height: 0.5rem!important;
+        &:hover{
+            opacity: 0.65;
+        }
     }
-}
-.navbar-toggler{
-    background-color: $color__main;
 }
 
-//menu defilant
+// video
+.video{
+    
+    overflow: hidden;
+    width:100%;
+}
+iframe {
+    position: relative;
+    top: -64px;
+    width:100%;
+}
+// banniere qui defile 
 .scrolling_menu{
     max-width: 80%;
-    margin: 1.5em auto 2em;
+    margin: 0 auto 2em;
     border: 2px solid $color__main;
     font-size:1.3rem;
     box-shadow: 0 .25em .5em #CCC,inset 0 0 1em .25em #CCC;
@@ -51,22 +87,49 @@ h1{
         padding-left: 100%;
         animation: scrolling 30s infinite linear;
     }
-    .scrolling_title{
-        color: rgb(70, 62, 59);
+    span{
+        color: $color__brown;
     }
 }
+
+//animation sur les 4 images 
+.card{
+    width: 230px!important;
+    height:14rem!important;
+    overflow: hidden;
+}
+#card1{
+    animation: position-left 500ms;
+    @include effect;
+}
+
+#card2{
+    animation: position-right 1500ms;
+    @include effect;
+}
+
+#card3{
+    animation: position-left 1500ms;
+    @include effect;
+}
+
+#card4{
+    animation: position-right 2000ms;
+    @include effect;
+}
+
 .img_carousel{
     object-fit: cover;
 }
+
 .card-title{
     font-size:1.2rem;
 }
 
-
 section{
     max-width:75%;
     h2{
-        @include title;
+       color: $color__brown;
     }
     & .card{
         border: 0px solid transparent!important;
@@ -140,12 +203,22 @@ section{
         }
     }
 }
-@media all and (min-width: 992px) and (max-width:1100px){
+
+@media all and (min-width: 992px) and (max-width:1200px){
     #link1{
         display: none;
     }
 }
-
+@media all and (min-width: 700px){
+    iframe{
+        width: 700px;
+        height: 550px;
+    }
+    .menu{
+        column-gap: 1rem;
+        row-gap:1rem;
+    }
+}
 @media all and (min-width: 992px){
     .img_carousel{
         margin-top:5.5rem!important;
@@ -153,6 +226,7 @@ section{
     .navbar{
         box-shadow: $shadow;
         z-index:5;
+        padding: 0!important;
     }
     .scrolling_menu{
         max-width: 40%;
@@ -163,38 +237,28 @@ section{
     .navbar h1{
         font-size: 1.4rem;
     }
-    .product_shop .card{
-        width: 140px!important;
-    }
     section{
         max-width: 90%!important;
     }
     .law{
         margin-left: 3.7rem!important;
     }
-    .cards{
-        width: 300px!important;
+    .menu{
+        max-width:500px;
     }
-    .card{
-        max-width: 9rem!important;
-        max-height:130px!important;
-    }
-    .scrolling_menu{
-        margin-top: 2rem!important;
-    }
+
     .footer{
         flex-direction: column;
         align-items: center;
     }    
 }
 @media all and (max-width:360px){
-
     .card{
         max-width: 8rem!important;
         max-height:130px!important;
     }
     h1{
-        font-size:1.2rem!important;
+        font-size:1rem!important;
         padding-left:0px;
     }
 }

@@ -1,79 +1,119 @@
 @charset "UTF-8";
-@-webkit-keyframes scrolling {
-  0% {
-    -webkit-transform: translate3d(0, 0, 0);
-            transform: translate3d(0, 0, 0);
-    /* position initiale à droite */
-  }
-  100% {
-    -webkit-transform: translate3d(-100%, 0, 0);
-            transform: translate3d(-100%, 0, 0);
-    /* position finale à gauche */
-  }
-}
 @keyframes scrolling {
   0% {
-    -webkit-transform: translate3d(0, 0, 0);
-            transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
     /* position initiale à droite */
   }
   100% {
-    -webkit-transform: translate3d(-100%, 0, 0);
-            transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
     /* position finale à gauche */
   }
 }
-
+@keyframes position-left {
+  0% {
+    transform: translateX(-200%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes position-right {
+  0% {
+    transform: translateX(200%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 h1 {
-  text-shadow: 1px 1px 2px #000;
+  color: #532901 !important;
   padding-left: 15px;
 }
 
 .navbar {
-  line-height: 1rem;
-  z-index: 5;
+  box-shadow: 0 0.1em 0.3em #e5b99b, inset 0 0 0.5em 0.2em #e5b99b;
+}
+.navbar .navbar-toggler {
+  background-color: #e5b99b;
+}
+.navbar .navbar-toggler:hover {
+  background-color: #532901;
+}
+.navbar .nav-link {
+  padding-left: 1rem;
+  color: #532901 !important;
+  line-height: 0.5rem !important;
+}
+.navbar .nav-link:hover {
+  opacity: 0.65;
 }
 
-.navbar:focus, .navbar:hover {
-  -webkit-box-shadow: 0 0.1em 0.3em #e4ac7e, inset 0 0 0.5em 0.2em #e4ac7e;
-          box-shadow: 0 0.1em 0.3em #e4ac7e, inset 0 0 0.5em 0.2em #e4ac7e;
+.video {
+  overflow: hidden;
+  width: 100%;
 }
 
-.navbar:hover {
-  background-color: #fff;
-}
-
-.navbar-toggler {
-  background-color: #e4ac7e;
+iframe {
+  position: relative;
+  top: -64px;
+  width: 100%;
 }
 
 .scrolling_menu {
   max-width: 80%;
-  margin: 1.5em auto 2em;
-  border: 2px solid #e4ac7e;
+  margin: 0 auto 2em;
+  border: 2px solid #e5b99b;
   font-size: 1.3rem;
-  -webkit-box-shadow: 0 .25em .5em #CCC,inset 0 0 1em .25em #CCC;
-          box-shadow: 0 .25em .5em #CCC,inset 0 0 1em .25em #CCC;
+  box-shadow: 0 0.25em 0.5em #CCC, inset 0 0 1em 0.25em #CCC;
 }
-
 .scrolling_menu > :first-child {
   padding-left: 100%;
-  -webkit-animation: scrolling 30s infinite linear;
-          animation: scrolling 30s infinite linear;
+  animation: scrolling 30s infinite linear;
+}
+.scrolling_menu span {
+  color: #532901;
 }
 
-.scrolling_menu .scrolling_title {
-  color: #463e3b;
+.card {
+  width: 230px !important;
+  height: 14rem !important;
+  overflow: hidden;
+}
+
+#card1 {
+  animation: position-left 500ms;
+}
+#card1:hover {
+  filter: brightness(70%);
+}
+
+#card2 {
+  animation: position-right 1500ms;
+}
+#card2:hover {
+  filter: brightness(70%);
+}
+
+#card3 {
+  animation: position-left 1500ms;
+}
+#card3:hover {
+  filter: brightness(70%);
+}
+
+#card4 {
+  animation: position-right 2000ms;
+}
+#card4:hover {
+  filter: brightness(70%);
 }
 
 .img_carousel {
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .card-title {
@@ -83,23 +123,18 @@ h1 {
 section {
   max-width: 75%;
 }
-
 section h2 {
-  color: #e4ac7e !important;
+  color: #532901;
 }
-
 section .card {
   border: 0px solid transparent !important;
 }
-
 section .card-img {
   margin-left: 0 !important;
   height: 300px;
 }
-
 section .card-img img {
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   height: 100%;
   width: 300px !important;
 }
@@ -109,34 +144,27 @@ section .card-img img {
 }
 
 .footer {
-  background-color: #e4ac7e;
+  background-color: #e5b99b;
 }
-
 .footer p {
   margin-bottom: 0 !important;
 }
-
 .footer .relance {
   width: 10rem;
   max-height: 6rem;
 }
-
 .footer .director a {
   color: #463e3b !important;
 }
-
 .footer .director a:hover {
   color: #fff !important;
 }
-
 .footer .director .law {
   font-size: 0.9rem !important;
 }
-
 .footer .director .law:hover {
   color: #fff !important;
 }
-
 .footer .director .facebook {
   color: #463e3b !important;
 }
@@ -144,86 +172,84 @@ section .card-img img {
 .mentions h1 {
   text-shadow: 1px 1px 2px #000;
 }
-
 .mentions .font {
   color: #535151;
 }
 
 .return_home .link_home {
   text-decoration: none;
-  color: #e4ac7e !important;
+  color: #e5b99b !important;
 }
-
 .return_home .link_home:hover {
   color: #000 !important;
 }
-
 .return_home .link_home .arrow {
   width: 50px;
 }
 
-@media all and (min-width: 992px) and (max-width: 1100px) {
+@media all and (min-width: 992px) and (max-width: 1200px) {
   #link1 {
     display: none;
   }
 }
+@media all and (min-width: 700px) {
+  iframe {
+    width: 700px;
+    height: 550px;
+  }
 
+  .menu {
+    column-gap: 1rem;
+    row-gap: 1rem;
+  }
+}
 @media all and (min-width: 992px) {
   .img_carousel {
     margin-top: 5.5rem !important;
   }
+
   .navbar {
-    -webkit-box-shadow: 0 0.1em 0.3em #e4ac7e, inset 0 0 0.5em 0.2em #e4ac7e;
-            box-shadow: 0 0.1em 0.3em #e4ac7e, inset 0 0 0.5em 0.2em #e4ac7e;
+    box-shadow: 0 0.1em 0.3em #e5b99b, inset 0 0 0.5em 0.2em #e5b99b;
     z-index: 5;
+    padding: 0 !important;
   }
+
   .scrolling_menu {
     max-width: 40%;
   }
 }
-
 @media all and (max-width: 550px) {
   .navbar h1 {
     font-size: 1.4rem;
   }
-  .product_shop .card {
-    width: 140px !important;
-  }
+
   section {
     max-width: 90% !important;
   }
+
   .law {
     margin-left: 3.7rem !important;
   }
-  .cards {
-    width: 300px !important;
+
+  .menu {
+    max-width: 500px;
   }
-  .card {
-    max-width: 9rem !important;
-    max-height: 130px !important;
-  }
-  .scrolling_menu {
-    margin-top: 2rem !important;
-  }
+
   .footer {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    flex-direction: column;
+    align-items: center;
   }
 }
-
 @media all and (max-width: 360px) {
   .card {
     max-width: 8rem !important;
     max-height: 130px !important;
   }
+
   h1 {
-    font-size: 1.2rem !important;
+    font-size: 1rem !important;
     padding-left: 0px;
   }
 }
+
 /*# sourceMappingURL=style.css.map */
