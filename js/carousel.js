@@ -1,7 +1,7 @@
 const carousel_photo = [
     {
         id:1,
-        attachment: "images/carousel_great.jpeg",
+        attachment: "images/carrousel_de_la_cite.jpg",
         alt:"Splendide manège de chevaux en bois devant les remparts d'Aigues-Mortes"
     },
     {
@@ -11,18 +11,13 @@ const carousel_photo = [
     },
     {
         id:3,
-        attachment: "images/carousel_whole.jpeg",
-        alt:"Carrousel sur la place devant les remparts d'Aigues-Mortes"
+        attachment: "images/horses_in_face.jpg",
+        alt:"Chevaux de bois du carrousel d'Aigues-Mortes"
     },
     {
         id:4,
         attachment: "images/carrousel.jpg",
         alt:"Carrousel de chevaux sur la place devant les remparts d'Aigues-Mortes"
-    },
-    {
-        id:5,
-        attachment: "images/carousel_top.jpeg",
-        alt:"pHOTO du haut du manège de chevaux en bois sur la place devant les remparts d'Aigues-Mortes"
     },
     {
         id:6,
@@ -31,7 +26,7 @@ const carousel_photo = [
     },
     {
         id:7,
-        attachment: "images/carousel_night_2.jpeg",
+        attachment: "images/mini-carrousel.jpeg",
         alt:"Manège de chevaux illuminé sur la place devant les remparts d'Aigues-Mortes"
     },
     {

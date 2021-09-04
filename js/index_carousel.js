@@ -18,16 +18,25 @@ function carousel(selector, data) {
                     arrows: true,
                     centerMode: true,
                     centerPadding: '40px',
-                    slidesToShow: 3.5
+                    slidesToShow: 3
                 }
             },
             {
-                breakpoint: 1000,
+                breakpoint: 1100,
                 settings: {
                     arrows: true,
                     centerMode: true,
                     centerPadding: '40px',
-                    slidesToShow: 2.5
+                    slidesToShow: 2.4
+                }
+            },
+            {
+                breakpoint: 880,
+                settings: {
+                    arrows: true,
+                    centerMode: false,
+                    centerPadding: '40px',
+                    slidesToShow: 2.2
                 }
             },
             {
@@ -36,7 +45,16 @@ function carousel(selector, data) {
                     arrows: true,
                     centerMode: false,
                     centerPadding: '40px',
-                    slidesToShow: 2
+                    slidesToShow: 1.8
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    arrows: true,
+                    centerMode: false,
+                    centerPadding: '40px',
+                    slidesToShow: 1.60
                 }
             },
             {
