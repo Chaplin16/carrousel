@@ -12,6 +12,9 @@ function carousel(selector, data) {
         slidesToShow: 4,
         arrows: true,
         adaptiveHeight: true,
+        speed:1300,
+        autoplaySpeed:1200,
+        autoplay: true,
         responsive: [{
                 breakpoint: 1300,
                 settings: {
